@@ -9,6 +9,8 @@ import { BookListComponent } from './components/book-list/book-list.component';
 import { BookItemComponent } from './components/book-item/book-item.component';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { PublishersComponent } from './publishers/publishers.component';
+import { BookEditComponent } from './components/book-edit/book-edit.component';
+import { EmtyComponent } from './components/emty/emty.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PublishersComponent } from './publishers/publishers.component';
     BookListComponent,
     BookItemComponent,
     BookDetailComponent,
-    PublishersComponent
+    PublishersComponent,
+    BookEditComponent,
+    EmtyComponent
   ],
   imports: [
     BrowserModule,

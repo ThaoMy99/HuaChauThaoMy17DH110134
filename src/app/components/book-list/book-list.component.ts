@@ -9,18 +9,19 @@ import { Book } from 'src/app/models/book.model';
   styleUrls: ['./book-list.component.css'],
 })
 export class BookListComponent implements OnInit {
-  books: Book[] | any;
   constructor(
     private bookService: BookServiceService,
     private router: Router,
     private route: ActivatedRoute
   ) {}
 
+  books: Book[] | any;
+  isSelected: boolean = false;
   ngOnInit(): void {
     this.books = this.bookService.getBooks();
   }
 
   onNewBook() {
-    // this.router.navigate(['new'], { relativeTo: this.route });
+    this.router.navigate(['new'], { relativeTo: this.route });
   }
 }

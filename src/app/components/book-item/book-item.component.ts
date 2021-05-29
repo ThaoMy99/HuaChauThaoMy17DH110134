@@ -9,6 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class BookItemComponent implements OnInit {
   @Input() book: Book | any;
   @Input() index: number | any;
+  @Output() bookSelected = new EventEmitter<void>();
   constructor() {}
 
   ngOnInit(): void {}
