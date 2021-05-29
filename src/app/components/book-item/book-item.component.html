@@ -1,1 +1,23 @@
-<p>book-item works!</p>
+<a
+  style="cursor: pointer"
+  [routerLink]="index"
+  routerLinkActive="active"
+  class="
+    list-group-item list-group-item-action
+    d-flex
+    justify-content-between
+    align-items-center
+  "
+>
+  <div>
+    <h4 class="list-group-item-heading">
+      {{ book.id }}
+    </h4>
+    <p class="list-group-item-text">
+      {{ book.name }}
+    </p>
+    <p class="list-group-item-text">
+      {{ book.price | currency }}
+    </p>
+  </div>
+</a>

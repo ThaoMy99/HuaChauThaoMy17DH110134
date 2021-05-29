@@ -1,1 +1,18 @@
-<p>book-list works!</p>
+<div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-success" (click)="onNewBook()">New Book</button>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-sm-6">
+    <div class="list-group">
+      <app-book-item
+        *ngFor="let item of books; let i = index"
+        [book]="item"
+        [index]="i"
+      >
+      </app-book-item>
+    </div>
+  </div>
+</div>
